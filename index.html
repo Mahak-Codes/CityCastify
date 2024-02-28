@@ -17,25 +17,25 @@
     <div class="card">
         <div class="search">
             <input type="text" placeholder="Enter city name" spellcheck="false">
-            <button><img src="images/search.png"></button>
+            <button><img src="CityCastify/images/search.png"></button>
         </div>
         <div class="error">
             <p>Invalid city name</p>
         </div>
         <div class="weather">
-            <img src="images/rain.png" class="weathericon">
+            <img src="CityCastify/images/rain.png" class="weathericon">
             <h1 class="temp">22°C</h1>
             <h2 class="city">New Delhi</h2>
             <div class="details">
                 <div class="col">
-                    <img src="images/humidity.png" alt="icon">
+                    <img src="CityCastify/images/humidity.png" alt="icon">
                     <div>
                         <p class="humidity">50%</p>
                         <p>Humidity</p>
                     </div>
                 </div>
                 <div class="col">
-                    <img src="images/wind.png" alt="icon">
+                    <img src="CityCastify/images/wind.png" alt="icon">
                     <div>
                         <p class="wind">15 km/h</p>
                         <p>Wind Speed</p>
@@ -68,10 +68,10 @@
                 document.querySelector(".wind").innerHTML = data.wind.speed + " km/hr";
 
                 if (data.weather[0].main == "Clouds") {
-                    weatherIcon.src = "images/clouds.png";
+                    weatherIcon.src = "CityCastify/images/clouds.png";
                 }
                 else if (data.weather[0].main == "Clouds") {
-                    weatherIcon.src = "images/clouds.png";
+                    weatherIcon.src = "CityCastify/images/clouds.png";
                 }
                 else if (data.weather[0].main == "Clear") {
                     weatherIcon.src = "images/clear.png";
