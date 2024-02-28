@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="CityCastify/style.css">
+    <link rel="stylesheet" href="style.css">
     
 </head>
 
@@ -17,25 +17,25 @@
     <div class="card">
         <div class="search">
             <input type="text" placeholder="Enter city name" spellcheck="false">
-            <button><img src="CityCastify/images/search.png"></button>
+            <button><img src="images\search.png"></button>
         </div>
         <div class="error">
             <p>Invalid city name</p>
         </div>
         <div class="weather">
-            <img src="CityCastify/images/rain.png" class="weathericon">
+            <img src="images/rain.png" class="weathericon">
             <h1 class="temp">22°C</h1>
             <h2 class="city">New Delhi</h2>
             <div class="details">
                 <div class="col">
-                    <img src="CityCastify/images/humidity.png" alt="icon">
+                    <img src="images/humidity.png" alt="icon">
                     <div>
                         <p class="humidity">50%</p>
                         <p>Humidity</p>
                     </div>
                 </div>
                 <div class="col">
-                    <img src="CityCastify/images/wind.png" alt="icon">
+                    <img src="images/wind.png" alt="icon">
                     <div>
                         <p class="wind">15 km/h</p>
                         <p>Wind Speed</p>
@@ -68,22 +68,22 @@
                 document.querySelector(".wind").innerHTML = data.wind.speed + " km/hr";
 
                 if (data.weather[0].main == "Clouds") {
-                    weatherIcon.src = "CityCastify/images/clouds.png";
+                    weatherIcon.src = "images/clouds.png";
                 }
                 else if (data.weather[0].main == "Clouds") {
-                    weatherIcon.src = "CityCastify/images/clouds.png";
+                    weatherIcon.src = "images/clouds.png";
                 }
                 else if (data.weather[0].main == "Clear") {
-                    weatherIcon.src = "CityCastify/images/clear.png";
+                    weatherIcon.src = "images/clear.png";
                 }
                 else if (data.weather[0].main == "Rain") {
-                    weatherIcon.src = "CityCastify/images/rain.png";
+                    weatherIcon.src = "images/rain.png";
                 }
                 else if (data.weather[0].main == "Drizzle") {
-                    weatherIcon.src = "CityCastify/images/drizzle.png";
+                    weatherIcon.src = "images/drizzle.png";
                 }
                 else if (data.weather[0].main == "Mist") {
-                    weatherIcon.src = "CityCastify/images/mist.png";
+                    weatherIcon.src = "images/mist.png";
                 }
                 document.querySelector(".weather").style.display = "block";
                 document.querySelector(".error").style.display = "none";
